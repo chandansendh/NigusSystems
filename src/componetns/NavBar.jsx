@@ -10,12 +10,18 @@ const NavBar=()=>{
         <div className="nav">
           <div className="nav-container">
             <div className="logo">
-              <img src="/images/NigusLogo.png" alt="Logo" className="logoImg" />
+              <a href="/">
+                <img
+                  src="/images/NigusLogo.png"
+                  alt="Logo"
+                  className="logoImg"
+                />
+              </a>
             </div>
             <div className="nav-manu">
               <ul>
                 <li>
-                  <NavLink to="/"  className="nav-link">
+                  <NavLink to="/" className="nav-link">
                     Services
                   </NavLink>
                 </li>
@@ -39,14 +45,14 @@ const NavBar=()=>{
                     Contact Us
                   </NavLink>
                 </li>
-                  <NavLink to="/contact" className="nav-menu-btn">
-                    <FcSalesPerformance className="sales_icon" />
-                    Sales
-                  </NavLink>
-                  <NavLink to="/contact" className="nav-menu-btn">
-                    <IoMdContacts className="contact_icon" />
-                    Contact
-                  </NavLink>
+                <NavLink to="/contact" className="nav-menu-btn">
+                  <FcSalesPerformance className="sales_icon" />
+                  Sales
+                </NavLink>
+                <NavLink to="/contact" className="nav-menu-btn">
+                  <IoMdContacts className="contact_icon" />
+                  Contact
+                </NavLink>
               </ul>
             </div>
           </div>
